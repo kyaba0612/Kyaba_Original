@@ -1,0 +1,47 @@
+body {
+    width: 100%;
+    background-image: url(../images/bg.png);
+}
+
+.welcome_message {
+    text-align: center;
+}
+
+.mentor_sec {
+    float: left;
+}
+
+.sidebar {
+    width: 20%;
+    background-color: aqua;
+}
+
+.mentor_list {
+    width: 80%;
+}
+.period_title {
+    text-align: center;
+    background-image: url(../images/sec_title_bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    color: #fff;
+}
+
+.mentor_cotainer {
+    display: flex;
+    flex-wrap : wrap;
+}
+
+.mentor_box {
+    text-align: center;
+    background-color: aqua;
+    width: 150px;
+    margin: 15px;
+    padding: 10px;
+}
+
+.mentor_img {
+    border-radius: 50%;
+    width: 100%;
+}
