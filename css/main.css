@@ -11,6 +11,7 @@ body {
     padding: 0;
     max-width: 100%;
     background-image: url(../images/bg.png);
+    overflow-x: hidden;
 }
 
 header {
@@ -34,10 +35,15 @@ h1 {
     text-align: center;
 }
 
+.sp_scroll {
+    display: none;
+}
+
 .info_btn {
     display: block;
     margin: 0 0 0 auto;
-    padding: 20px;
+    padding: 40px;
+    width: 100px;
 }
 
 .welcome_message {
@@ -61,13 +67,7 @@ h2 {
 
 
 .sidebar {
-    /* width: 20%; */
     position: absolute;
-    
-}
-
-li .icon {
-    background-position: center;
 }
 
 .mentor_sec {
@@ -91,6 +91,7 @@ li .icon {
     display: flex;
     flex-wrap : wrap;
     justify-content: center;
+    min-height: 2000px;
 }
 
 .mentor_box {
@@ -143,12 +144,10 @@ footer {
     padding: 10px;
     background-color: black;
     color:#fff;
-    bottom: 0;
     text-align: center;
 }
 
 .particle_container {
-    width: 100%;
     z-index: 1;
 }
 
@@ -168,162 +167,142 @@ footer {
     flex-direction: column;
     height: 600px;
     list-style-type: none;
-    /* margin: 20px 70px; */
-    margin: 0;
     padding: 20px;
     background-color: #fff;
     border-radius: 300px;
     overflow: hidden;
     justify-content: center;
     box-shadow: 0 0 8px gray;
-    left: 20px;
+    margin-left: 20px;
 }
-
-/* #filterBtnList li {
-
-} */
 
 .fixed-top {
     position: fixed;
-    top: 40px;
+    top: 20px;
     left: 20px;
     z-index: 10;
+    margin: 0 !important;
 }
 
 .fixed-botom {
-    position: absolute;
-    bottom: 100;
+    position: fixed;
+    bottom: 40px;
     left: 20px;
     z-index: 10;
+    margin: 0 !important;
+}
+
+li .icon {
+    background-position: center;
+}
+
+.icon {
+    margin-top: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+.icon:hover {
+    cursor: pointer;
+    transform: scale(1.1, 1.1);
 }
 
 .all .icon {
     display: inline-block;
     text-align: center;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
+    line-height: 30px;
     border-radius: 50%;
     background-color: black;
     color: #fff;
+    font-size: 12px;
 
 }
 
 .iPhone .icon {
-    width: 40px;
-    height: 40px;
     background-image: url(../images/course/iPhone.png);
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 .Android .icon {
-    width: 40px;
-    height: 40px;
     background-image: url(../images/course/Android.png);
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 .Unity .icon {
-    width: 40px;
-    height: 40px;
     background-image: url(../images/course/Unity.png);
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 .WebD .icon {
-    width: 40px;
-    height: 40px;
     background-image: url(../images/course/WebD.png);
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 .WebS .icon {
-    width: 40px;
-    height: 40px;
     background-image: url(../images/course/WebS.png);
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 .mediaart .icon {
-    width: 40px;
-    height: 40px;
     background-image: url(../images/course/mediaart.png);
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 .anime .icon {
-    width: 40px;
-    height: 40px;
     background-image: url(../images/course/anime.png);
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 .movie .icon {
-    width: 40px;
-    height: 40px;
     background-image: url(../images/course/movie.png);
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 .design .icon {
-    width: 40px;
-    height: 40px;
     background-image: url(../images/course/design.png);
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 .DTM .icon {
-    width: 40px;
-    height: 40px;
     background-image: url(../images/course/DTM.png);
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 .minecraft .icon {
-    width: 40px;
-    height: 40px;
     background-image: url(../images/course/minecraft.png);
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 .camera .icon {
-    width: 40px;
-    height: 40px;
     background-image: url(../images/course/camera.png);
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 .miku .icon {
-    width: 40px;
-    height: 40px;
     background-image: url(../images/course/miku.png);
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 .Maya .icon {
-    width: 40px;
-    height: 40px;
     background-image: url(../images/course/Maya.png);
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 .LINE .icon {
-    width: 40px;
-    height: 40px;
     background-image: url(../images/course/LINE.png);
     background-size: contain;
     background-repeat: no-repeat;
