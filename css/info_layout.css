@@ -1,0 +1,49 @@
+body {
+    display: block;
+    width: 100%;
+    background-image: url(../images/bg.png);
+    text-align: center;
+    font-family:HelveticaNeue-bold;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.button {
+    display: inline-block;
+    font-style: italic;
+    font-size: 15pt;
+    text-align: center;
+    cursor: pointer;
+    padding: 12px 55px;
+    background: #000000;
+    color: #ffffff;
+    line-height: 1em;
+    transition: .3s;
+    border: 2px solid #000000;
+}
+
+.button:hover {
+    color: #000000;
+    background: #ffffff;
+}
+
+.form_container {
+    width: 100%;
+    margin: 50px 0px;
+}
+
+.form_box {
+    margin: 50px 0px;
+    font-size: 20pt;
+}
+
+footer {
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color:#fff;
+    position: absolute;
+    bottom: 0;
+}
+
+
