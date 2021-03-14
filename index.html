@@ -1,0 +1,1182 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/remodal.css">
+    <link rel="stylesheet" type="text/css" href="css/remodal-default-theme.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.0.5/remodal.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script>$(function () {
+            $('.blank').click(function () {
+                window.open(this.href, '_blank');
+                return false;
+            });
+        });
+    </script>
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'mup8yep',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+    <script>
+        $(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 1100) {
+                    $('#filterBtnList').addClass('fixed-top');
+                } else {
+                    $('#filterBtnList').removeClass('fixed-top');
+                }
+                scrollHeight = $(document).height();  
+                scrollPosition = $(window).height() + $(window).scrollTop();
+                footHeight = $("footer").innerHeight();
+                if (scrollHeight - scrollPosition <= footHeight) { 
+                    $('#filterBtnList').addClass('fixed-botom');
+                    $('#filterBtnList').removeClass('fixed-top');
+                } else {
+                    $('#filterBtnList').removeClass('fixed-botom');
+                }
+            });
+        });
+    </script>
+    <title>kansai_mentors</title>
+</head>
+
+<body>
+
+    <div class="particle_container">
+        <div class="particle" data-0="transform:translate(150%,50%)" data-2300="transform:translate(150%,150%)">
+            <img src="images/particle.png" alt="">
+        </div>
+
+        <div class="particle" data-0="transform:translate(0%,150%)" data-2300="transform:translate(0%,200%)">
+            <img src="images/particle.png" alt="">
+        </div>
+
+        <div class="particle" data-0="transform:translate(120%,300%)" data-2300="transform:translate(120%,400%)">
+            <img src="images/particle.png" alt="">
+        </div>
+
+        <div class="particle" data-0="transform:translate(20%,500%)" data-2300="transform:translate(20%,700%)">
+            <img src="images/particle.png" alt="">
+        </div>
+
+        <div class="particle" data-0="transform:translate(140%,700%)" data-2300="transform:translate(140%,800%)" >
+            <img src="images/particle.png" alt="">
+        </div>
+
+        <div class="particle" data-0="transform:translate(60%,900%)" data-2300="transform:translate(60%,1000%)">
+            <img src="images/particle.png" alt="">
+        </div>
+
+        <div class="particle" data-0="transform:translate(-10%,1050%)" data-2300="transform:translate(-10%,1250%)">
+            <img src="images/particle.png" alt="">
+        </div>
+
+        <div class="particle" data-0="transform:translate(130%,1100%)" data-2300="transform:translate(130%,1300%)">
+            <img src="images/particle.png" alt="">
+        </div>
+    </div>
+
+    <header>
+        <a href="info.html" target="_target">
+            <img src="images/info.png" alt="" class="info_btn">
+        </a>
+        <img src="images/KANSAI_LOGO.png" alt="" class="logo">
+        <h1>
+            MENTORS
+        </h1>
+    </header>
+
+    <main>
+
+        <div class="welcome_message">
+            <h2>ようこそ関西メンターへ！</h2>
+            <p>関西にもたくさんの素敵なメンターがいるよ！<br>
+                追いコンや勉強会、遊びなどたくさんの企画をみんなで一緒につくろう！！</p>
+        </div>
+
+        <div class="mentor_list">
+
+            <aside class="sidebar">
+                <ul id="filterBtnList">
+                    <li class="all is_active">
+                        <div class="icon">ALL</div>
+                    </li>
+                    <li class="iPhone">
+                        <div class="icon"></div>
+                    </li>
+                    <li class="Android">
+                        <div class="icon"></div>
+                    </li>
+                    <li class="Unity">
+                        <div class="icon"></div>
+                    </li>
+                    <li class="WebD">
+                        <div class="icon"></div>
+                    </li>
+                    <li class="WebS">
+                        <div class="icon"></div>
+                    </li>
+                    <li class="mediaart">
+                        <div class="icon"></div>
+                    </li>
+                    <li class="anime">
+                        <div class="icon"></div>
+                    </li>
+                    <li class="movie">
+                        <div class="icon"></div>
+                    </li>
+                    <li class="design">
+                        <div class="icon"></div>
+                    </li>
+                    <li class="DTM">
+                        <div class="icon"></div>
+                    </li>
+                    <li class="minecraft">
+                        <div class="icon"></div>
+                    </li>
+                    <li class="camera">
+                        <div class="icon"></div>
+                    </li>
+                    <li class="miku">
+                        <div class="icon"></div>
+                    </li>
+                    <li class="Maya">
+                        <div class="icon"></div>
+                    </li>
+                    <li class="LINE">
+                        <div class="icon"></div>
+                    </li>
+                </ul>
+            </aside>
+
+            <article class="mentor_sec">
+
+                <section class="mentor_12th">
+
+                    <div class="sec_title">
+                        <h3>12th</h3>
+                    </div>
+
+                    <div class="mentor_cotainer">
+
+                        <a href="#modal_12_001" class="mentor_box DTM miku box">
+                            <img src="../images/mentor/mentor_12_001.jpg" class="mentor_img">
+                            <p class="mentor_name">
+                                ひかすくん
+                            </p>
+                        </a>
+                        <div class="remodal" data-remodal-id="modal_12_001"
+                            data-remodal-options="closeOnOutsideClick: true">
+                            <button data-remodal-action="close" class="remodal-close"></button>
+                            <div class="modal_mentorbox">
+                                <div class="modal_left">
+                                    <img src="../images/mentor/mentor_12_001.jpg" class="modal_mentor_img">
+                                    <div class="course_skill_list">
+                                        <img src="../images/course/DTM.png" alt="">
+                                        <img src="../images/course/miku.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="modal_right">
+                                    <p class="modal_mentor_name">
+                                        ひかすくん
+                                    </p>
+                                    <p class="modal_mentor_comment">
+                                        #バーチャル背景透過しちゃうメンター
+                                    </p>
+                                    <p class="modal_mentor_comment">
+                                        関西のDTMはなかなかの曲者揃い。leadersの研修ではバーチャル背景が上手く映らず,顔だけ透過していたことも。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="#modal_12_002" class="mentor_box Unity box">
+                            <img src="../images/mentor/mentor_12_002.jpg" class="mentor_img">
+                            <p class="mentor_name">
+                                ぽけ
+                            </p>
+                        </a>
+                        <div class="remodal" data-remodal-id="modal_12_002"
+                            data-remodal-options="closeOnOutsideClick: true">
+                            <button data-remodal-action="close" class="remodal-close"></button>
+                            <div class="modal_mentorbox">
+                                <div class="modal_left">
+                                    <img src="../images/mentor/mentor_12_002.jpg" class="modal_mentor_img">
+                                    <div class="course_skill_list">
+                                        <img src="../images/course/Unity.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="modal_right">
+                                    <p class="modal_mentor_name">
+                                        ぽけ
+                                    </p>
+                                    <p class="modal_mentor_comment">
+                                        #仮面ライダーメンター
+                                    </p>
+                                    <p class="modal_mentor_comment">
+                                        お家には仮面ライダーのベルトがたくさん！中には大人も遊べるベルトがあるらしい。メンバーと仮面ライダーの話で盛り上がりたいなら彼のもとへ！あと、ダンスが上手い。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="#modal_12_003" class="mentor_box minecraft box">
+                            <img src="../images/mentor/mentor_12_003.jpg" class="mentor_img">
+                            <p class="mentor_name">
+                                みったに
+                            </p>
+                        </a>
+                        <div class="remodal" data-remodal-id="modal_12_003"
+                            data-remodal-options="closeOnOutsideClick: true">
+                            <button data-remodal-action="close" class="remodal-close"></button>
+                            <div class="modal_mentorbox">
+                                <div class="modal_left">
+                                    <img src="../images/mentor/mentor_12_003.jpg" class="modal_mentor_img">
+                                    <div class="course_skill_list">
+                                        <img src="../images/course/minecraft.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="modal_right">
+                                    <p class="modal_mentor_name">
+                                        みったに
+                                    </p>
+                                    <p class="modal_mentor_comment">
+                                        #仮面ライダーメンター
+                                    </p>
+                                    <p class="modal_mentor_comment">
+                                        お家には仮面ライダーのベルトがたくさん！中には大人も遊べるベルトがあるらしい。メンバーと仮面ライダーの話で盛り上がりたいなら彼のもとへ！あと、ダンスが上手い。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="#modal_12_004" class="mentor_box iPhone box">
+                            <img src="../images/mentor/mentor_12_004.jpg" class="mentor_img">
+                            <p class="mentor_name">
+                                やっさん
+                            </p>
+                        </a>
+                        <div class="remodal" data-remodal-id="modal_12_004"
+                            data-remodal-options="closeOnOutsideClick: true">
+                            <button data-remodal-action="close" class="remodal-close"></button>
+                            <div class="modal_mentorbox">
+                                <div class="modal_left">
+                                    <img src="../images/mentor/mentor_12_004.jpg" class="modal_mentor_img">
+                                    <div class="course_skill_list">
+                                        <img src="../images/course/iPhone.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="modal_right">
+                                    <p class="modal_mentor_name">
+                                        やっさん
+                                    </p>
+                                    <p class="modal_mentor_comment">
+                                        #ギャップすごすぎメンター
+                                    </p>
+                                    <p class="modal_mentor_comment">
+                                        テックではかなりいじられキャラ。でも、すごく仕事ができてめっちゃかっこいい。学生団体の代表も任されるほどしっかりしてるバチイケメンター。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="#modal_12_005" class="mentor_box Android box">
+                            <img src="../images/mentor/mentor_12_005.jpg" class="mentor_img">
+                            <p class="mentor_name">
+                                とろろいも
+                            </p>
+                        </a>
+                        <div class="remodal" data-remodal-id="modal_12_005"
+                            data-remodal-options="closeOnOutsideClick: true">
+                            <button data-remodal-action="close" class="remodal-close"></button>
+                            <div class="modal_mentorbox">
+                                <div class="modal_left">
+                                    <img src="../images/mentor/mentor_12_005.jpg" class="modal_mentor_img">
+                                    <div class="course_skill_list">
+                                        <img src="../images/course/Android.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="modal_right">
+                                    <p class="modal_mentor_name">
+                                        とろろいも
+                                    </p>
+                                    <p class="modal_mentor_comment">
+                                        #学習意欲つよつよメンター
+                                    </p>
+                                    <p class="modal_mentor_comment">
+                                        メンター名は当時ドイツ語の発声練習で巻き舌を鍛えるためだった！？とっても勉強熱心で説明もとっても上手。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="#modal_12_006" class="mentor_box WebS box">
+                            <img src="../images/mentor/mentor_12_006.jpg" class="mentor_img">
+                            <p class="mentor_name">
+                                ミニー
+                            </p>
+                        </a>
+                        <div class="remodal" data-remodal-id="modal_12_006"
+                            data-remodal-options="closeOnOutsideClick: true">
+                            <button data-remodal-action="close" class="remodal-close"></button>
+                            <div class="modal_mentorbox">
+                                <div class="modal_left">
+                                    <img src="../images/mentor/mentor_12_006.jpg" class="modal_mentor_img">
+                                    <div class="course_skill_list">
+                                        <img src="../images/course/WebS.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="modal_right">
+                                    <p class="modal_mentor_name">
+                                        ミニー
+                                    </p>
+                                    <p class="modal_mentor_comment">
+                                        #学習意欲つよつよメンター
+                                    </p>
+                                    <p class="modal_mentor_comment">
+                                        メンター名は当時ドイツ語の発声練習で巻き舌を鍛えるためだった！？とっても勉強熱心で説明もとっても上手。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="#modal_12_007" class="mentor_box Android box">
+                            <img src="../images/mentor/mentor_12_007.jpg" class="mentor_img">
+                            <p class="mentor_name">
+                                もな
+                            </p>
+                        </a>
+                        <div class="remodal" data-remodal-id="modal_12_007"
+                            data-remodal-options="closeOnOutsideClick: true">
+                            <button data-remodal-action="close" class="remodal-close"></button>
+                            <div class="modal_mentorbox">
+                                <div class="modal_left">
+                                    <img src="../images/mentor/mentor_12_007.jpg" class="modal_mentor_img">
+                                    <div class="course_skill_list">
+                                        <img src="../images/course/iPhone.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="modal_right">
+                                    <p class="modal_mentor_name">
+                                        もな
+                                    </p>
+                                    <p class="modal_mentor_comment">
+                                        #満を持するメンター
+                                    </p>
+                                    <p class="modal_mentor_comment">
+                                        メンバー思いの優しいお兄さん。しかし、まだ誰も見たことはないが、実はとっても面白い一発芸を秘めているらしい。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="#modal_12_008" class="mentor_box WebD design box">
+                            <img src="../images/mentor/mentor_12_008.jpg" class="mentor_img">
+                            <p class="mentor_name">
+                                のざ
+                            </p>
+                        </a>
+                        <div class="remodal" data-remodal-id="modal_12_008"
+                            data-remodal-options="closeOnOutsideClick: true">
+                            <button data-remodal-action="close" class="remodal-close"></button>
+                            <div class="modal_mentorbox">
+                                <div class="modal_left">
+                                    <img src="../images/mentor/mentor_12_008.jpg" class="modal_mentor_img">
+                                    <div class="course_skill_list">
+                                        <img src="../images/course/WebD.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="modal_right">
+                                    <p class="modal_mentor_name">
+                                        のざ
+                                    </p>
+                                    <p class="modal_mentor_comment">
+                                        #あざとい代表陽キャメンター
+                                    </p>
+                                    <p class="modal_mentor_comment">
+                                        バチイケの画像は大体あざといポーズ。とっても明るく、場が一気ににぎやかになる。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="#modal_12_009" class="mentor_box WebD design box">
+                            <img src="../images/mentor/mentor_12_009.jpg" class="mentor_img">
+                            <p class="mentor_name">
+                                るかぽん
+                            </p>
+                        </a>
+                        <div class="remodal" data-remodal-id="modal_12_009"
+                            data-remodal-options="closeOnOutsideClick: true">
+                            <button data-remodal-action="close" class="remodal-close"></button>
+                            <div class="modal_mentorbox">
+                                <div class="modal_left">
+                                    <img src="../images/mentor/mentor_12_009.jpg" class="modal_mentor_img">
+                                    <div class="course_skill_list">
+                                        <img src="../images/course/WebD.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="modal_right">
+                                    <p class="modal_mentor_name">
+                                        るかぽん
+                                    </p>
+                                    <p class="modal_mentor_comment">
+                                        #フォトジェニックメンター
+                                    </p>
+                                    <p class="modal_mentor_comment">
+                                        インスタが超オシャレ！そして、みんな大好き華のスタバ店員。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="#modal_12_010" class="mentor_box Unity box">
+                            <img src="../images/mentor/mentor_12_010.jpg" class="mentor_img">
+                            <p class="mentor_name">
+                                みったん
+                            </p>
+                        </a>
+                        <div class="remodal" data-remodal-id="modal_12_010"
+                            data-remodal-options="closeOnOutsideClick: true">
+                            <button data-remodal-action="close" class="remodal-close"></button>
+                            <div class="modal_mentorbox">
+                                <div class="modal_left">
+                                    <img src="../images/mentor/mentor_12_010.jpg" class="modal_mentor_img">
+                                    <div class="course_skill_list">
+                                        <img src="../images/course/Unity.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="modal_right">
+                                    <p class="modal_mentor_name">
+                                        とろろいも
+                                    </p>
+                                    <p class="modal_mentor_comment">
+                                        #学習意欲つよつよメンター
+                                    </p>
+                                    <p class="modal_mentor_comment">
+                                        メンター名は当時ドイツ語の発声練習で巻き舌を鍛えるためだった！？とっても勉強熱心で説明もとっても上手。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="#" class="mentor_box WebS box">
+                            <img src="../images/mentor/mentor_12_011.jpg" class="mentor_img">
+                            <p class="mentor_name">
+                                がっしー
+                            </p>
+                        </a>
+                        <div class="remodal" data-remodal-id="modal_12_005"
+                            data-remodal-options="closeOnOutsideClick: true">
+                            <button data-remodal-action="close" class="remodal-close"></button>
+                            <div class="modal_mentorbox">
+                                <div class="modal_left">
+                                    <img src="../images/mentor/mentor_12_005.jpg" class="modal_mentor_img">
+                                    <div class="course_skill_list">
+                                        <img src="../images/course/iPhone.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="modal_right">
+                                    <p class="modal_mentor_name">
+                                        とろろいも
+                                    </p>
+                                    <p class="modal_mentor_comment">
+                                        #学習意欲つよつよメンター
+                                    </p>
+                                    <p class="modal_mentor_comment">
+                                        メンター名は当時ドイツ語の発声練習で巻き舌を鍛えるためだった！？とっても勉強熱心で説明もとっても上手。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="#" class="mentor_box movie box">
+                            <img src="../images/mentor/mentor_12_012.jpg" class="mentor_img">
+                            <p class="mentor_name">
+                                リラ
+                            </p>
+                        </a>
+                        <div class="remodal" data-remodal-id="modal_12_005"
+                            data-remodal-options="closeOnOutsideClick: true">
+                            <button data-remodal-action="close" class="remodal-close"></button>
+                            <div class="modal_mentorbox">
+                                <div class="modal_left">
+                                    <img src="../images/mentor/mentor_12_005.jpg" class="modal_mentor_img">
+                                    <div class="course_skill_list">
+                                        <img src="../images/course/iPhone.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="modal_right">
+                                    <p class="modal_mentor_name">
+                                        とろろいも
+                                    </p>
+                                    <p class="modal_mentor_comment">
+                                        #学習意欲つよつよメンター
+                                    </p>
+                                    <p class="modal_mentor_comment">
+                                        メンター名は当時ドイツ語の発声練習で巻き舌を鍛えるためだった！？とっても勉強熱心で説明もとっても上手。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="#" class="mentor_box Android box">
+                            <img src="../images/mentor/mentor_12_013.jpg" class="mentor_img">
+                            <p class="mentor_name">
+                                しん
+                            </p>
+                        </a>
+                        <div class="remodal" data-remodal-id="modal_12_005"
+                            data-remodal-options="closeOnOutsideClick: true">
+                            <button data-remodal-action="close" class="remodal-close"></button>
+                            <div class="modal_mentorbox">
+                                <div class="modal_left">
+                                    <img src="../images/mentor/mentor_12_005.jpg" class="modal_mentor_img">
+                                    <div class="course_skill_list">
+                                        <img src="../images/course/iPhone.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="modal_right">
+                                    <p class="modal_mentor_name">
+                                        とろろいも
+                                    </p>
+                                    <p class="modal_mentor_comment">
+                                        #学習意欲つよつよメンター
+                                    </p>
+                                    <p class="modal_mentor_comment">
+                                        メンター名は当時ドイツ語の発声練習で巻き舌を鍛えるためだった！？とっても勉強熱心で説明もとっても上手。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="#" class="mentor_box DTM miku box">
+                            <img src="../images/mentor/mentor_12_014.jpg" class="mentor_img">
+                            <p class="mentor_name">
+                                カイザー
+                            </p>
+                        </a>
+                        <div class="remodal" data-remodal-id="modal_12_005"
+                            data-remodal-options="closeOnOutsideClick: true">
+                            <button data-remodal-action="close" class="remodal-close"></button>
+                            <div class="modal_mentorbox">
+                                <div class="modal_left">
+                                    <img src="../images/mentor/mentor_12_005.jpg" class="modal_mentor_img">
+                                    <div class="course_skill_list">
+                                        <img src="../images/course/iPhone.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="modal_right">
+                                    <p class="modal_mentor_name">
+                                        とろろいも
+                                    </p>
+                                    <p class="modal_mentor_comment">
+                                        #学習意欲つよつよメンター
+                                    </p>
+                                    <p class="modal_mentor_comment">
+                                        メンター名は当時ドイツ語の発声練習で巻き舌を鍛えるためだった！？とっても勉強熱心で説明もとっても上手。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="#" class="mentor_box movie box">
+                            <img src="../images/mentor/mentor_12_015.jpg" class="mentor_img">
+                            <p class="mentor_name">
+                                けんぼー
+                            </p>
+                        </a>
+                        <div class="remodal" data-remodal-id="modal_12_005"
+                            data-remodal-options="closeOnOutsideClick: true">
+                            <button data-remodal-action="close" class="remodal-close"></button>
+                            <div class="modal_mentorbox">
+                                <div class="modal_left">
+                                    <img src="../images/mentor/mentor_12_005.jpg" class="modal_mentor_img">
+                                    <div class="course_skill_list">
+                                        <img src="../images/course/iPhone.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="modal_right">
+                                    <p class="modal_mentor_name">
+                                        とろろいも
+                                    </p>
+                                    <p class="modal_mentor_comment">
+                                        #学習意欲つよつよメンター
+                                    </p>
+                                    <p class="modal_mentor_comment">
+                                        メンター名は当時ドイツ語の発声練習で巻き舌を鍛えるためだった！？とっても勉強熱心で説明もとっても上手。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="#" class="mentor_box WebD design box">
+                            <img src="../images/mentor/mentor_12_016.jpg" class="mentor_img">
+                            <p class="mentor_name">
+                                うの
+                            </p>
+                        </a>
+                        <div class="remodal" data-remodal-id="modal_12_005"
+                            data-remodal-options="closeOnOutsideClick: true">
+                            <button data-remodal-action="close" class="remodal-close"></button>
+                            <div class="modal_mentorbox">
+                                <div class="modal_left">
+                                    <img src="../images/mentor/mentor_12_005.jpg" class="modal_mentor_img">
+                                    <div class="course_skill_list">
+                                        <img src="../images/course/iPhone.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="modal_right">
+                                    <p class="modal_mentor_name">
+                                        とろろいも
+                                    </p>
+                                    <p class="modal_mentor_comment">
+                                        #学習意欲つよつよメンター
+                                    </p>
+                                    <p class="modal_mentor_comment">
+                                        メンター名は当時ドイツ語の発声練習で巻き舌を鍛えるためだった！？とっても勉強熱心で説明もとっても上手。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="#" class="mentor_box Unity box">
+                            <img src="../images/mentor/mentor_12_017.jpg" class="mentor_img">
+                            <p class="mentor_name">
+                                かっすー
+                            </p>
+                        </a>
+                        <div class="remodal" data-remodal-id="modal_12_005"
+                            data-remodal-options="closeOnOutsideClick: true">
+                            <button data-remodal-action="close" class="remodal-close"></button>
+                            <div class="modal_mentorbox">
+                                <div class="modal_left">
+                                    <img src="../images/mentor/mentor_12_005.jpg" class="modal_mentor_img">
+                                    <div class="course_skill_list">
+                                        <img src="../images/course/iPhone.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="modal_right">
+                                    <p class="modal_mentor_name">
+                                        とろろいも
+                                    </p>
+                                    <p class="modal_mentor_comment">
+                                        #学習意欲つよつよメンター
+                                    </p>
+                                    <p class="modal_mentor_comment">
+                                        メンター名は当時ドイツ語の発声練習で巻き舌を鍛えるためだった！？とっても勉強熱心で説明もとっても上手。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="#" class="mentor_box anime movie box">
+                            <img src="../images/mentor/mentor_12_018.jpg" class="mentor_img">
+                            <p class="mentor_name">
+                                がっき
+                            </p>
+                        </a>
+                        <div class="remodal" data-remodal-id="modal_12_005"
+                            data-remodal-options="closeOnOutsideClick: true">
+                            <button data-remodal-action="close" class="remodal-close"></button>
+                            <div class="modal_mentorbox">
+                                <div class="modal_left">
+                                    <img src="../images/mentor/mentor_12_005.jpg" class="modal_mentor_img">
+                                    <div class="course_skill_list">
+                                        <img src="../images/course/iPhone.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="modal_right">
+                                    <p class="modal_mentor_name">
+                                        とろろいも
+                                    </p>
+                                    <p class="modal_mentor_comment">
+                                        #学習意欲つよつよメンター
+                                    </p>
+                                    <p class="modal_mentor_comment">
+                                        メンター名は当時ドイツ語の発声練習で巻き舌を鍛えるためだった！？とっても勉強熱心で説明もとっても上手。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="#" class="mentor_box Unity box">
+                            <img src="../images/mentor/mentor_12_019.jpg" class="mentor_img">
+                            <p class="mentor_name">
+                                あんちゃん
+                            </p>
+                        </a>
+                        <div class="remodal" data-remodal-id="modal_12_005"
+                            data-remodal-options="closeOnOutsideClick: true">
+                            <button data-remodal-action="close" class="remodal-close"></button>
+                            <div class="modal_mentorbox">
+                                <div class="modal_left">
+                                    <img src="../images/mentor/mentor_12_005.jpg" class="modal_mentor_img">
+                                    <div class="course_skill_list">
+                                        <img src="../images/course/iPhone.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="modal_right">
+                                    <p class="modal_mentor_name">
+                                        とろろいも
+                                    </p>
+                                    <p class="modal_mentor_comment">
+                                        #学習意欲つよつよメンター
+                                    </p>
+                                    <p class="modal_mentor_comment">
+                                        メンター名は当時ドイツ語の発声練習で巻き舌を鍛えるためだった！？とっても勉強熱心で説明もとっても上手。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="#" class="mentor_box Unity box">
+                            <img src="../images/mentor/mentor_12_020.jpg" class="mentor_img">
+                            <p class="mentor_name">
+                                ばっさー
+                            </p>
+                        </a>
+                        <div class="remodal" data-remodal-id="modal_12_005"
+                            data-remodal-options="closeOnOutsideClick: true">
+                            <button data-remodal-action="close" class="remodal-close"></button>
+                            <div class="modal_mentorbox">
+                                <div class="modal_left">
+                                    <img src="../images/mentor/mentor_12_005.jpg" class="modal_mentor_img">
+                                    <div class="course_skill_list">
+                                        <img src="../images/course/iPhone.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="modal_right">
+                                    <p class="modal_mentor_name">
+                                        とろろいも
+                                    </p>
+                                    <p class="modal_mentor_comment">
+                                        #学習意欲つよつよメンター
+                                    </p>
+                                    <p class="modal_mentor_comment">
+                                        メンター名は当時ドイツ語の発声練習で巻き舌を鍛えるためだった！？とっても勉強熱心で説明もとっても上手。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="#" class="mentor_box anime movie box">
+                            <img src="../images/mentor/mentor_12_021.jpg" class="mentor_img">
+                            <p class="mentor_name">
+                                きゃば
+                            </p>
+                        </a>
+                        <div class="remodal" data-remodal-id="modal_12_005"
+                            data-remodal-options="closeOnOutsideClick: true">
+                            <button data-remodal-action="close" class="remodal-close"></button>
+                            <div class="modal_mentorbox">
+                                <div class="modal_left">
+                                    <img src="../images/mentor/mentor_12_005.jpg" class="modal_mentor_img">
+                                    <div class="course_skill_list">
+                                        <img src="../images/course/iPhone.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="modal_right">
+                                    <p class="modal_mentor_name">
+                                        とろろいも
+                                    </p>
+                                    <p class="modal_mentor_comment">
+                                        #学習意欲つよつよメンター
+                                    </p>
+                                    <p class="modal_mentor_comment">
+                                        メンター名は当時ドイツ語の発声練習で巻き舌を鍛えるためだった！？とっても勉強熱心で説明もとっても上手。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="#" class="mentor_box anime movie box">
+                            <img src="../images/mentor/mentor_12_022.jpg" class="mentor_img">
+                            <p class="mentor_name">
+                                きむきむ
+                            </p>
+                        </a>
+                        <div class="remodal" data-remodal-id="modal_12_005"
+                            data-remodal-options="closeOnOutsideClick: true">
+                            <button data-remodal-action="close" class="remodal-close"></button>
+                            <div class="modal_mentorbox">
+                                <div class="modal_left">
+                                    <img src="../images/mentor/mentor_12_005.jpg" class="modal_mentor_img">
+                                    <div class="course_skill_list">
+                                        <img src="../images/course/iPhone.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="modal_right">
+                                    <p class="modal_mentor_name">
+                                        とろろいも
+                                    </p>
+                                    <p class="modal_mentor_comment">
+                                        #学習意欲つよつよメンター
+                                    </p>
+                                    <p class="modal_mentor_comment">
+                                        メンター名は当時ドイツ語の発声練習で巻き舌を鍛えるためだった！？とっても勉強熱心で説明もとっても上手。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="#" class="mentor_box minecraft box">
+                            <img src="../images/mentor/mentor_12_023.jpg" class="mentor_img">
+                            <p class="mentor_name">
+                                はし
+                            </p>
+                        </a>
+                        <div class="remodal" data-remodal-id="modal_12_005"
+                            data-remodal-options="closeOnOutsideClick: true">
+                            <button data-remodal-action="close" class="remodal-close"></button>
+                            <div class="modal_mentorbox">
+                                <div class="modal_left">
+                                    <img src="../images/mentor/mentor_12_005.jpg" class="modal_mentor_img">
+                                    <div class="course_skill_list">
+                                        <img src="../images/course/iPhone.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="modal_right">
+                                    <p class="modal_mentor_name">
+                                        とろろいも
+                                    </p>
+                                    <p class="modal_mentor_comment">
+                                        #学習意欲つよつよメンター
+                                    </p>
+                                    <p class="modal_mentor_comment">
+                                        メンター名は当時ドイツ語の発声練習で巻き舌を鍛えるためだった！？とっても勉強熱心で説明もとっても上手。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="#" class="mentor_box anime movie box">
+                            <img src="../images/mentor/mentor_12_024.jpg" class="mentor_img">
+                            <p class="mentor_name">
+                                とく
+                            </p>
+                        </a>
+                        <div class="remodal" data-remodal-id="modal_12_005"
+                            data-remodal-options="closeOnOutsideClick: true">
+                            <button data-remodal-action="close" class="remodal-close"></button>
+                            <div class="modal_mentorbox">
+                                <div class="modal_left">
+                                    <img src="../images/mentor/mentor_12_005.jpg" class="modal_mentor_img">
+                                    <div class="course_skill_list">
+                                        <img src="../images/course/iPhone.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="modal_right">
+                                    <p class="modal_mentor_name">
+                                        とろろいも
+                                    </p>
+                                    <p class="modal_mentor_comment">
+                                        #学習意欲つよつよメンター
+                                    </p>
+                                    <p class="modal_mentor_comment">
+                                        メンター名は当時ドイツ語の発声練習で巻き舌を鍛えるためだった！？とっても勉強熱心で説明もとっても上手。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="#" class="mentor_box Unity box">
+                            <img src="../images/mentor/mentor_12_025.jpg" class="mentor_img">
+                            <p class="mentor_name">
+                                らっしーね
+                            </p>
+                        </a>
+                        <div class="remodal" data-remodal-id="modal_12_005"
+                            data-remodal-options="closeOnOutsideClick: true">
+                            <button data-remodal-action="close" class="remodal-close"></button>
+                            <div class="modal_mentorbox">
+                                <div class="modal_left">
+                                    <img src="../images/mentor/mentor_12_005.jpg" class="modal_mentor_img">
+                                    <div class="course_skill_list">
+                                        <img src="../images/course/iPhone.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="modal_right">
+                                    <p class="modal_mentor_name">
+                                        とろろいも
+                                    </p>
+                                    <p class="modal_mentor_comment">
+                                        #学習意欲つよつよメンター
+                                    </p>
+                                    <p class="modal_mentor_comment">
+                                        メンター名は当時ドイツ語の発声練習で巻き舌を鍛えるためだった！？とっても勉強熱心で説明もとっても上手。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="#" class="mentor_box iPhone box">
+                            <img src="../images/mentor/mentor_12_026.jpg" class="mentor_img">
+                            <p class="mentor_name">
+                                ほしょ
+                            </p>
+                        </a>
+                        <div class="remodal" data-remodal-id="modal_12_005"
+                            data-remodal-options="closeOnOutsideClick: true">
+                            <button data-remodal-action="close" class="remodal-close"></button>
+                            <div class="modal_mentorbox">
+                                <div class="modal_left">
+                                    <img src="../images/mentor/mentor_12_005.jpg" class="modal_mentor_img">
+                                    <div class="course_skill_list">
+                                        <img src="../images/course/iPhone.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="modal_right">
+                                    <p class="modal_mentor_name">
+                                        とろろいも
+                                    </p>
+                                    <p class="modal_mentor_comment">
+                                        #学習意欲つよつよメンター
+                                    </p>
+                                    <p class="modal_mentor_comment">
+                                        メンター名は当時ドイツ語の発声練習で巻き舌を鍛えるためだった！？とっても勉強熱心で説明もとっても上手。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="#" class="mentor_box movie box">
+                            <img src="../images/mentor/mentor_12_027.jpg" class="mentor_img">
+                            <p class="mentor_name">
+                                まなちゃ
+                            </p>
+                        </a>
+                        <div class="remodal" data-remodal-id="modal_12_005"
+                            data-remodal-options="closeOnOutsideClick: true">
+                            <button data-remodal-action="close" class="remodal-close"></button>
+                            <div class="modal_mentorbox">
+                                <div class="modal_left">
+                                    <img src="../images/mentor/mentor_12_005.jpg" class="modal_mentor_img">
+                                    <div class="course_skill_list">
+                                        <img src="../images/course/iPhone.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="modal_right">
+                                    <p class="modal_mentor_name">
+                                        とろろいも
+                                    </p>
+                                    <p class="modal_mentor_comment">
+                                        #学習意欲つよつよメンター
+                                    </p>
+                                    <p class="modal_mentor_comment">
+                                        メンター名は当時ドイツ語の発声練習で巻き舌を鍛えるためだった！？とっても勉強熱心で説明もとっても上手。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="#" class="mentor_box WebD design box">
+                            <img src="../images/mentor/mentor_12_028.jpg" class="mentor_img">
+                            <p class="mentor_name">
+                                わたべ
+                            </p>
+                        </a>
+                        <div class="remodal" data-remodal-id="modal_12_005"
+                            data-remodal-options="closeOnOutsideClick: true">
+                            <button data-remodal-action="close" class="remodal-close"></button>
+                            <div class="modal_mentorbox">
+                                <div class="modal_left">
+                                    <img src="../images/mentor/mentor_12_005.jpg" class="modal_mentor_img">
+                                    <div class="course_skill_list">
+                                        <img src="../images/course/iPhone.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="modal_right">
+                                    <p class="modal_mentor_name">
+                                        とろろいも
+                                    </p>
+                                    <p class="modal_mentor_comment">
+                                        #学習意欲つよつよメンター
+                                    </p>
+                                    <p class="modal_mentor_comment">
+                                        メンター名は当時ドイツ語の発声練習で巻き舌を鍛えるためだった！？とっても勉強熱心で説明もとっても上手。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="#" class="mentor_box DTM miku box">
+                            <img src="../images/mentor/mentor_12_029.jpg" class="mentor_img">
+                            <p class="mentor_name">
+                                ぐっちゃん
+                            </p>
+                        </a>
+                        <div class="remodal" data-remodal-id="modal_12_005"
+                            data-remodal-options="closeOnOutsideClick: true">
+                            <button data-remodal-action="close" class="remodal-close"></button>
+                            <div class="modal_mentorbox">
+                                <div class="modal_left">
+                                    <img src="../images/mentor/mentor_12_005.jpg" class="modal_mentor_img">
+                                    <div class="course_skill_list">
+                                        <img src="../images/course/iPhone.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="modal_right">
+                                    <p class="modal_mentor_name">
+                                        とろろいも
+                                    </p>
+                                    <p class="modal_mentor_comment">
+                                        #学習意欲つよつよメンター
+                                    </p>
+                                    <p class="modal_mentor_comment">
+                                        メンター名は当時ドイツ語の発声練習で巻き舌を鍛えるためだった！？とっても勉強熱心で説明もとっても上手。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="#" class="mentor_box WebS box">
+                            <img src="../images/mentor/mentor_12_030.jpg" class="mentor_img">
+                            <p class="mentor_name">
+                                てぃーてぃー
+                            </p>
+                        </a>
+                        <div class="remodal" data-remodal-id="modal_12_005"
+                            data-remodal-options="closeOnOutsideClick: true">
+                            <button data-remodal-action="close" class="remodal-close"></button>
+                            <div class="modal_mentorbox">
+                                <div class="modal_left">
+                                    <img src="../images/mentor/mentor_12_005.jpg" class="modal_mentor_img">
+                                    <div class="course_skill_list">
+                                        <img src="../images/course/iPhone.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="modal_right">
+                                    <p class="modal_mentor_name">
+                                        とろろいも
+                                    </p>
+                                    <p class="modal_mentor_comment">
+                                        #学習意欲つよつよメンター
+                                    </p>
+                                    <p class="modal_mentor_comment">
+                                        メンター名は当時ドイツ語の発声練習で巻き舌を鍛えるためだった！？とっても勉強熱心で説明もとっても上手。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="#" class="mentor_box Unity box">
+                            <img src="../images/mentor/mentor_12_031.jpg" class="mentor_img">
+                            <p class="mentor_name">
+                                かろ
+                            </p>
+                        </a>
+                        <div class="remodal" data-remodal-id="modal_12_005"
+                            data-remodal-options="closeOnOutsideClick: true">
+                            <button data-remodal-action="close" class="remodal-close"></button>
+                            <div class="modal_mentorbox">
+                                <div class="modal_left">
+                                    <img src="../images/mentor/mentor_12_005.jpg" class="modal_mentor_img">
+                                    <div class="course_skill_list">
+                                        <img src="../images/course/iPhone.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="modal_right">
+                                    <p class="modal_mentor_name">
+                                        とろろいも
+                                    </p>
+                                    <p class="modal_mentor_comment">
+                                        #学習意欲つよつよメンター
+                                    </p>
+                                    <p class="modal_mentor_comment">
+                                        メンター名は当時ドイツ語の発声練習で巻き舌を鍛えるためだった！？とっても勉強熱心で説明もとっても上手。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="#" class="mentor_box minecraft box">
+                            <img src="../images/mentor/mentor_12_032.jpg" class="mentor_img">
+                            <p class="mentor_name">
+                                こにー
+                            </p>
+                        </a>
+                        <div class="remodal" data-remodal-id="modal_12_005"
+                            data-remodal-options="closeOnOutsideClick: true">
+                            <button data-remodal-action="close" class="remodal-close"></button>
+                            <div class="modal_mentorbox">
+                                <div class="modal_left">
+                                    <img src="../images/mentor/mentor_12_005.jpg" class="modal_mentor_img">
+                                    <div class="course_skill_list">
+                                        <img src="../images/course/iPhone.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="modal_right">
+                                    <p class="modal_mentor_name">
+                                        とろろいも
+                                    </p>
+                                    <p class="modal_mentor_comment">
+                                        #学習意欲つよつよメンター
+                                    </p>
+                                    <p class="modal_mentor_comment">
+                                        メンター名は当時ドイツ語の発声練習で巻き舌を鍛えるためだった！？とっても勉強熱心で説明もとっても上手。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </article>
+
+        </div>
+
+    </main>
+
+    <footer class="footer">©LiT!kansai-mentors</footer>
+
+    <script>
+        jQuery(function ($) {
+
+            /* 要素を取得(ボタンと要素) */
+            var btnList = $('#filterBtnList *'),
+                box = $('.box');
+
+            /* ボタンのいずれかをクリックした場合 */
+            btnList.click(function () {
+                if (!($(this).hasClass('is_active'))) {
+                    var filterClass = $(this).attr('class');
+                    btnList.removeClass('is_active');
+                    $(this).addClass('is_active');
+
+                    box.each(function () {
+                        $(this).fadeOut(0);
+                        if ($(this).hasClass(filterClass)) {
+                            $(this).stop().fadeIn(300);
+                        } else if (filterClass === 'all') {
+                            box.stop().fadeIn(300);
+                        }
+                    });
+                }
+            });
+
+        });
+    </script>
+    <script src="js/skrollr.min.js"></script>
+    <script>
+        var s = skrollr.init();
+    </script>
+</body>
+
+</html>
